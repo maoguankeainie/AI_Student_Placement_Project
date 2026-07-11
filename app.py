@@ -8,18 +8,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import os
-import zipfile
 
-
-# 自动解压模型文件
-if not os.path.exists("models"):
-
-    with zipfile.ZipFile(
-        "models.zip",
-        "r"
-    ) as zip_ref:
-
-        zip_ref.extractall()
 
 
 # ==========================
